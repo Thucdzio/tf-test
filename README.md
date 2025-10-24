@@ -1,5 +1,5 @@
 # Research Plan: Transformer-based Proteomics Modeling  
-Author : Lê Tiến Thực MSV : 22021197
+Author : Lê Tiến Thực  -   22021197
 
 ## Plan of Investigation
 
