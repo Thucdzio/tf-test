@@ -1,13 +1,53 @@
-Plan of investigation:
-Now - T11 : Transformer , classification process MS/MS,Prosit, alphapepdeep
-Tháng 11-12:
- pytorch ccs (output dim =1), rt (output dim =1), MS/MS (output dim =400)
-Integrate RT and CCS pipelines.
-Run baseline training on AutoRT and Prosit datasets.
-Tháng 1 : 
-Optimize Transformer hyperparameters (layers, heads, dropout, d_model).
-Develop unified evaluation module for RT + CCS + MS/MS.
-Tháng 2: Conduct large-scale training on full datasets and Report
-Tháng 3: Finalize model comparison and overall analysis and Summarize findings, limitations, and future directions 
+# Research Plan: Transformer-based Proteomics Modeling  
+Author : Lê Tiến Thực MSV : 22021197
 
+## Plan of Investigation
 
+### **Now – November (T11)**
+- Study Transformer architecture in depth (Attention, Encoder/Decoder, Positional Encoding).  
+- Review and analyze the **classification process for MS/MS** spectra.  
+- Study existing models: **Prosit** and **AlphaPeptDeep**, focusing on structure, data processing, and training pipeline.  
+
+---
+
+### **November – December (T11–T12)**
+- Implement baseline models using **PyTorch**:  
+  - **CCS prediction** → output dimension = 1  
+  - **RT prediction** → output dimension = 1  
+  - **MS/MS prediction** → output dimension = 400  
+- Integrate **RT** and **CCS** pipelines into a unified framework.  
+- Run **baseline training** on **AutoRT** and **Prosit** datasets.  
+
+---
+
+### **January (T1)**
+- Optimize **Transformer hyperparameters**:  
+  - Number of layers  
+  - Attention heads  
+  - Dropout rate  
+  - Embedding dimension (`d_model`)  
+- Develop a **unified evaluation module** for **RT + CCS + MS/MS** performance comparison.  
+
+---
+
+### **February (T2)**
+- Conduct **large-scale training** using full datasets.  
+- Generate and document **intermediate results and analysis report**.  
+
+---
+
+### **March (T3)**
+- Finalize **model comparison** and **overall analysis**.  
+- Summarize:  
+  - Key findings and improvements  
+  - Limitations of current approaches  
+  - Future research directions and applications  
+
+---
+
+## Expected Outcomes
+- Unified Transformer-based pipeline for RT, CCS, and MS/MS prediction.  
+- Quantitative comparison between Prosit, AlphaPeptDeep, and custom Transformer models.  
+- Reproducible training and evaluation framework for downstream proteomics research.  
+
+---
